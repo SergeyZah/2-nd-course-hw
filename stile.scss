@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    box-sizing: border-box;
+    background-image: url(./images/background_top.png);
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+
+        &_1 {
+            bottom: 149px;
+            right: 344px;
+        }
+
+        &_2 {
+            top: 69px;
+            left: 156px;
+        }
+
+        &_3 {
+            top: 94px;
+            left: 63px;
+        }
+
+        &_4 {
+            bottom: 225px;
+            right: 455px;
+        }
+
+        &_5 {
+            top: -333px;
+            right: -488px;
+        }
+    }
+
+    &__title {
+        color: rgb(32, 32, 39);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-top: 196px;
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+
+    &__link {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__button {
+        display: block;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        width: 247px;
+        padding: 16px 28px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+
+        &:hover {
+            color: rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+            transition: 0.8s;
+        }
+    }
+}
