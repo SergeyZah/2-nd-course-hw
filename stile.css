@@ -2,3 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    background-image: url(./images/background_top.png);
+
+}
