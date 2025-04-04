@@ -106,3 +106,81 @@ a {
         }
     }
 }
+
+.games-info {
+    background: rgb(32, 32, 39);
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-top: 94px;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+        padding-bottom: 72px;
+    }
+
+    &__elements {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        padding-bottom: 50px;
+    }
+}
+
+.elements__game {
+    width: 378px;
+    background: #fff;
+    border-radius: 30px;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    position: relative;
+
+    &:hover {
+        transform: scale(1.08);
+        transition: 0.7s;
+        cursor: pointer;
+    }
+}
+
+.game {
+
+    &__transfer::before {
+        position: absolute;
+        content: '';
+        inset: 0;
+    }
+
+    &__text {
+        padding: 32px;
+        padding-bottom: 36px;
+    }
+
+    &__number {
+        width: 80px;
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        padding: 8px 16px 10px 16px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        padding-top: 16px;
+    }
+}
