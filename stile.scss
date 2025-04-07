@@ -132,6 +132,7 @@ a {
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
         padding-bottom: 50px;
+        max-height: 1056px;
     }
 }
 
@@ -149,6 +150,22 @@ a {
         transform: scale(1.08);
         transition: 0.7s;
         cursor: pointer;
+    }
+
+    &_1,
+    &_3 {
+        height: 473px;
+    }
+
+    &_2,
+    &_5 {
+        height: 512px;
+    }
+
+    &_4,
+    &_6 {
+        height: 551px;
+        margin-top: -39px;
     }
 }
 

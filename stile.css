@@ -117,6 +117,7 @@ a {
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
   padding-bottom: 50px;
+  max-height: 1056px;
 }
 
 .elements__game {
@@ -134,6 +135,16 @@ a {
   transform: scale(1.08);
   transition: 0.7s;
   cursor: pointer;
+}
+.elements__game_1, .elements__game_3 {
+  height: 473px;
+}
+.elements__game_2, .elements__game_5 {
+  height: 512px;
+}
+.elements__game_4, .elements__game_6 {
+  height: 551px;
+  margin-top: -39px;
 }
 
 .game__transfer::before {
