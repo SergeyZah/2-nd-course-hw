@@ -58,6 +58,10 @@ a {
         }
     }
 
+    &__image-mobile {
+        display: none;
+    }
+
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
@@ -201,3 +205,5 @@ a {
         padding-top: 16px;
     }
 }
+
+@import 'mobile'

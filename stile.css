@@ -51,6 +51,9 @@ a {
   bottom: 0px;
   left: 0px;
 }
+.top__image-mobile {
+  display: none;
+}
 .top__title {
   color: rgb(32, 32, 39);
   font-size: 64px;
@@ -172,4 +175,10 @@ a {
   font-weight: 700;
   line-height: 39px;
   padding-top: 16px;
+}
+
+@media (max-width: 425px) {
+  .top__image {
+    display: none;
+  }
 }/*# sourceMappingURL=stile.css.map */
