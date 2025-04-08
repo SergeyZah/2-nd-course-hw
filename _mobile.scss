@@ -1,8 +1,83 @@
 @media (max-width: 426px) {
-    .top {
 
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
         &__image {
             display: none;
+
+            &-mobile {
+                display: block;
+                position: absolute;
+
+                &_1 {
+                    right: 34px;
+                    bottom: 79px;
+                }
+
+                &_2 {
+                    top: 64px;
+                    left: 91px;
+                }
+
+                &_3 {
+                    top: 97px;
+                    left: 37px;
+                }
+
+                &_4 {
+                    bottom: 125px;
+                    right: 86px;
+                }
+
+                &_5 {
+                    top: -90px;
+                    right: -90px;
+                }
+
+                &_6 {
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
         }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            color: rgb(32, 32, 39);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {
+            color: rgb(32, 32, 39);
+            max-width: 296px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        &__link {
+            color: rgb(32, 32, 39);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+    .games-info {
+        display: none;
     }
 }
