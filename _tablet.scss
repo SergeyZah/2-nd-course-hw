@@ -67,6 +67,11 @@
             background: rgb(0, 0, 0);
             transition: none;
         }
+
+        &__title {
+            width: 680px;
+            font-size: 48px;
+        }
     }
 
     .games-info__elements {
@@ -99,4 +104,16 @@
         }
     }
 
+}
+
+@media (max-width: 828px) {
+
+    .center {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .elements__game {
+        width: 348px;
+    }
 }
