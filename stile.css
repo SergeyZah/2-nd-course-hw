@@ -121,6 +121,8 @@ a {
 
 .games-info {
   background: rgb(32, 32, 39);
+  position: relative;
+  overflow: hidden;
 }
 .games-info__title {
   color: rgb(255, 255, 255);
@@ -144,6 +146,22 @@ a {
   padding-bottom: 50px;
   max-height: 1056px;
 }
+.games-info__star {
+  position: absolute;
+}
+.games-info__star_1 {
+  top: 77px;
+  right: -143px;
+  z-index: 0;
+}
+.games-info__star_2 {
+  top: 822px;
+  left: 40px;
+}
+.games-info__star_3 {
+  top: 770px;
+  left: 25px;
+}
 
 .elements__transfer {
   width: 378px;
@@ -154,6 +172,7 @@ a {
   flex-direction: column;
   height: -moz-max-content;
   height: max-content;
+  z-index: 1;
 }
 .elements__transfer:hover {
   transform: scale(1.08);
@@ -255,6 +274,9 @@ a {
   .games-info__elements {
     max-height: 1680px;
   }
+  .games-info__star_1 {
+    top: 147px;
+  }
   .elements__transfer {
     grid-column: span 6;
     height: auto;
@@ -283,6 +305,9 @@ a {
   .games-info__elements {
     justify-items: center;
     gap: 24px;
+  }
+  .games-info__star {
+    display: none;
   }
   .elements__transfer {
     width: 348px;

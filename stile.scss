@@ -137,6 +137,8 @@ a {
 
 .games-info {
     background: rgb(32, 32, 39);
+    position: relative;
+    overflow: hidden;
 
     &__title {
         color: rgb(255, 255, 255);
@@ -162,6 +164,26 @@ a {
         padding-bottom: 50px;
         max-height: 1056px;
     }
+
+    &__star {
+        position: absolute;
+
+        &_1 {
+            top: 77px;
+            right: -143px;
+            z-index: 0;
+        }
+
+        &_2 {
+            top: 822px;
+            left: 40px;
+        }
+
+        &_3 {
+            top: 770px;
+            left: 25px;
+        }
+    }
 }
 
 .elements {
@@ -174,6 +196,7 @@ a {
         display: flex;
         flex-direction: column;
         height: max-content;
+        z-index: 1;
 
         &:hover {
             transform: scale(1.08);

@@ -74,9 +74,21 @@
         }
     }
 
-    .games-info__elements {
-        max-height: 1680px;
+    .games-info {
+
+        &__elements {
+            max-height: 1680px;
+        }
+
+        &__star {
+
+            &_1 {
+                top: 147px
+            }
+        }
     }
+
+
 
     .elements__transfer {
         grid-column: span 6;
@@ -117,9 +129,16 @@
         padding-right: 24px;
     }
 
-    .games-info__elements {
-        justify-items: center;
-        gap: 24px;
+    .games-info {
+
+        &__elements {
+            justify-items: center;
+            gap: 24px;
+        }
+
+        &__star {
+            display: none;
+        }
     }
 
     .elements__transfer {
