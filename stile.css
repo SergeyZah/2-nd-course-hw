@@ -20,7 +20,7 @@ a {
 .top {
   box-sizing: border-box;
   background-image: url(./images/background_top.png);
-  height: 800px;
+  height: 710px;
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@ a {
   position: absolute;
 }
 .top__image_1 {
-  bottom: 149px;
+  bottom: 59px;
   right: 344px;
 }
 .top__image_2 {
@@ -40,16 +40,12 @@ a {
   left: 63px;
 }
 .top__image_4 {
-  bottom: 225px;
+  bottom: 135px;
   right: 455px;
 }
 .top__image_5 {
   top: -333px;
   right: -488px;
-}
-.top__image_6 {
-  bottom: 0px;
-  left: 0px;
 }
 .top__image-mobile {
   display: none;
@@ -92,11 +88,35 @@ a {
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
+  box-sizing: border-box;
 }
 .top__button:hover {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
-  transition: 0.8s;
+  transition: 0.9s;
+}
+
+.stripAnimated {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(188, 236, 48);
+  display: flex;
+  gap: 51px;
+  overflow-x: hidden;
+  padding: 27px 49px;
+}
+.stripAnimated__element {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.stripAnimated__star-mobile {
+  display: none;
 }
 
 .games-info {
@@ -125,18 +145,17 @@ a {
   max-height: 1056px;
 }
 
-.elements__game {
+.elements__transfer {
   width: 378px;
   background: #fff;
   border-radius: 30px;
   grid-column: span 4;
   display: flex;
   flex-direction: column;
-  height: -moz-min-content;
-  height: min-content;
-  position: relative;
+  height: -moz-max-content;
+  height: max-content;
 }
-.elements__game:hover {
+.elements__transfer:hover {
   transform: scale(1.08);
   transition: 0.7s;
   cursor: pointer;
@@ -236,8 +255,14 @@ a {
   .games-info__elements {
     max-height: 1680px;
   }
-  .elements__game {
+  .elements__transfer {
     grid-column: span 6;
+    height: auto;
+  }
+  .elements__transfer:hover {
+    transform: none;
+    transition: none;
+    cursor: none;
   }
   .elements__game_1, .elements__game_3 {
     height: auto;
@@ -249,18 +274,20 @@ a {
     height: auto;
     margin-top: 0px;
   }
-  .elements__game:hover {
-    transform: none;
-    transition: none;
-    cursor: none;
-  }
 }
 @media (max-width: 828px) {
   .center {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  .elements__game {
+  .games-info__elements {
+    justify-items: center;
+    gap: 24px;
+  }
+  .elements__transfer {
+    width: 348px;
+  }
+  .game__picture {
     width: 348px;
   }
 }
@@ -268,6 +295,9 @@ a {
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .top {
+    height: 649px;
   }
   .top__image {
     display: none;
@@ -278,7 +308,7 @@ a {
   }
   .top__image-mobile_1 {
     right: 34px;
-    bottom: 79px;
+    bottom: 28px;
   }
   .top__image-mobile_2 {
     top: 64px;
@@ -289,16 +319,12 @@ a {
     left: 37px;
   }
   .top__image-mobile_4 {
-    bottom: 125px;
+    bottom: 74px;
     right: 86px;
   }
   .top__image-mobile_5 {
     top: -90px;
     right: -90px;
-  }
-  .top__image-mobile_6 {
-    bottom: 0px;
-    left: 0px;
   }
   .top__info {
     display: flex;
@@ -306,26 +332,47 @@ a {
     align-items: center;
   }
   .top__title {
-    color: rgb(32, 32, 39);
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
     text-align: center;
+    max-width: 262px;
+    padding-top: 147px;
   }
   .top__text {
-    color: rgb(32, 32, 39);
     max-width: 296px;
     font-size: 16px;
-    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  .top__link {
+    font-size: 16px;
     line-height: 20px;
     text-align: center;
   }
-  .top__link {
-    color: rgb(32, 32, 39);
+  .top__button {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 141.69%;
+    letter-spacing: 0%;
     text-align: center;
+    width: 285px;
+  }
+  .stripAnimated {
+    gap: 27px;
+    padding: 16px 24px;
+  }
+  .stripAnimated__element {
+    font-size: 16px;
+  }
+  .stripAnimated__star {
+    display: none;
+  }
+  .stripAnimated__star-mobile {
+    display: block;
   }
   .games-info {
     display: none;

@@ -72,14 +72,14 @@ alert(`Привет, ${userName}!`);
 // Дополнительное задание
 let number = prompt('Загадайте любое число')
 
-number1 = number * 2;
+let number1 = number * 2;
 alert(`Удвойте загаданное число, получаем ${number1}`);
 
-number2 = number1 + 10;
+let number2 = number1 + 10;
 alert(`К удвоенному числу прибавьте 10, получаем ${number2}`);
 
-number3 = number2 / 2;
+let number3 = number2 / 2;
 alert(`Полученное число разделите на 2, получаем ${number3}`);
 
-number4 = number3 - number;
+let number4 = number3 - number;
 alert(`Отнимите загаданное число от результата, итог всегда будет один, равный ${number4}`);

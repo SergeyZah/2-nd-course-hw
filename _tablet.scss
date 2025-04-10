@@ -78,8 +78,18 @@
         max-height: 1680px;
     }
 
-    .elements__game {
+    .elements__transfer {
         grid-column: span 6;
+        height: auto;
+
+        &:hover {
+            transform: none;
+            transition: none;
+            cursor: none;
+        }
+    }
+
+    .elements__game {
 
         &_1,
         &_3 {
@@ -96,12 +106,6 @@
             height: auto;
             margin-top: 0px;
         }
-
-        &:hover {
-            transform: none;
-            transition: none;
-            cursor: none;
-        }
     }
 
 }
@@ -109,11 +113,20 @@
 @media (max-width: 828px) {
 
     .center {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
-    .elements__game {
+    .games-info__elements {
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .elements__transfer {
+        width: 348px;
+    }
+
+    .game__picture {
         width: 348px;
     }
 }
