@@ -315,6 +315,21 @@ a {
   transition: 0.9s;
 }
 
+.footer {
+  background: rgb(189, 237, 53);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 394px);
