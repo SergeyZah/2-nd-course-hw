@@ -237,6 +237,25 @@ a {
   flex-direction: column;
   gap: 32px;
 }
+.mini-games__star {
+  position: absolute;
+}
+.mini-games__star_1 {
+  top: 126px;
+  right: 45px;
+}
+.mini-games__star_2 {
+  top: 93px;
+  right: 124px;
+}
+.mini-games__star_3 {
+  bottom: 65px;
+  right: 52px;
+}
+.mini-games__star_4 {
+  bottom: 45px;
+  right: 150px;
+}
 
 .play__block {
   background: #fff;

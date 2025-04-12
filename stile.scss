@@ -279,6 +279,30 @@ a {
         flex-direction: column;
         gap: 32px;
     }
+
+    &__star {
+        position: absolute;
+
+        &_1 {
+            top: 126px;
+            right: 45px;
+        }
+
+        &_2 {
+            top: 93px;
+            right: 124px;
+        }
+
+        &_3 {
+            bottom: 65px;
+            right: 52px;
+        }
+
+        &_4 {
+            bottom: 45px;
+            right: 150px;
+        }
+    }
 }
 
 .play__block {
