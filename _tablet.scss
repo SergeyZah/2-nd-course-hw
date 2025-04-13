@@ -1,0 +1,151 @@
+@media (max-width: 1024px) {
+
+    .center {
+        padding-left: calc(50% - 394px);
+        padding-right: calc(50% - 394px);
+    }
+
+    .top {
+
+        &__image {
+
+            &-mobile {
+                display: block;
+                position: absolute;
+
+                &_1 {
+                    display: none;
+                }
+
+                &_2 {
+                    display: none;
+                }
+
+                &_3 {
+                    display: none;
+                }
+
+                &_4 {
+                    display: none;
+                }
+
+                &_5 {
+                    top: 0px;
+                    right: 0px;
+                }
+
+                &_6 {
+                    display: none;
+                }
+            }
+
+            &_1 {
+                bottom: 140px;
+                right: 120px;
+            }
+
+            &_4 {
+                bottom: 225px;
+                right: 205px;
+            }
+
+            &_5 {
+                display: none;
+            }
+        }
+
+        &__link:hover {
+            text-decoration: none;
+        }
+
+        &__link:active {
+            text-decoration: underline;
+        }
+
+        &__button:hover {
+            color: rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
+            transition: none;
+        }
+
+        &__title {
+            width: 680px;
+            font-size: 48px;
+        }
+    }
+
+    .games-info {
+
+        &__elements {
+            max-height: 1680px;
+        }
+
+        &__star {
+
+            &_1 {
+                top: 147px
+            }
+        }
+    }
+
+
+
+    .elements__transfer {
+        grid-column: span 6;
+        height: auto;
+
+        &:hover {
+            transform: none;
+            transition: none;
+            cursor: none;
+        }
+    }
+
+    .elements__game {
+
+        &_1,
+        &_3 {
+            height: auto;
+        }
+
+        &_2,
+        &_5 {
+            height: auto;
+        }
+
+        &_4,
+        &_6 {
+            height: auto;
+            margin-top: 0px;
+        }
+    }
+
+}
+
+@media (max-width: 828px) {
+
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .games-info {
+
+        &__elements {
+            justify-items: center;
+            gap: 24px;
+        }
+
+        &__star {
+            display: none;
+        }
+    }
+
+    .elements__transfer {
+        width: 348px;
+    }
+
+    .game__picture {
+        width: 348px;
+    }
+}
