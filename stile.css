@@ -630,4 +630,16 @@ a {
     font-weight: 600;
     line-height: 20px;
   }
+}
+@media (max-width: 375px) {
+  .play__block {
+    max-width: 288px;
+  }
+  .block__text {
+    max-width: 288px;
+    padding: 25px 25px 29px 25px;
+  }
+  .block__button {
+    max-width: 238px;
+  }
 }/*# sourceMappingURL=stile.css.map */

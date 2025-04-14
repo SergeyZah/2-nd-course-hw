@@ -186,3 +186,22 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+
+    .play__block {
+        max-width: 288px;
+    }
+
+    .block {
+
+        &__text {
+            max-width: 288px;
+            padding: 25px 25px 29px 25px;
+        }
+
+        &__button {
+            max-width: 238px;
+        }
+    }
+}
