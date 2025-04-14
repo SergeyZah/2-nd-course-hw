@@ -483,8 +483,8 @@ a {
 }
 @media (max-width: 426px) {
   .center {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: none;
+    padding-right: none;
   }
   .top {
     height: 649px;
@@ -578,12 +578,14 @@ a {
   .mini-games__play {
     gap: 24px;
     padding-top: 48px;
+    align-items: center;
   }
   .mini-games__star {
     display: none;
   }
   .play__block {
     flex-direction: column;
+    width: 343px;
   }
   .block__text {
     width: 343px;

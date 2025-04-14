@@ -1,8 +1,8 @@
 @media (max-width: 426px) {
 
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: none;
+        padding-right: none;
     }
 
     .top {
@@ -117,6 +117,7 @@
         &__play {
             gap: 24px;
             padding-top: 48px;
+            align-items: center;
         }
 
         &__star {
@@ -126,6 +127,7 @@
 
     .play__block {
         flex-direction: column;
+        width: 343px;
     }
 
     .block {
