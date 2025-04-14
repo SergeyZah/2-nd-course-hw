@@ -561,6 +561,11 @@ a {
     width: 285px;
     font-size: 16px;
   }
+  .block__button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    transition: none;
+  }
   .block__picture {
     display: none;
   }

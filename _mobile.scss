@@ -157,6 +157,12 @@
         &__button {
             width: 285px;
             font-size: 16px;
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                background: rgb(0, 0, 0);
+                transition: none;
+            }
         }
 
         &__picture {
