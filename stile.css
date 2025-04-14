@@ -271,6 +271,7 @@ a {
   flex-direction: column;
   padding: 48px;
   width: 600px;
+  box-sizing: border-box;
 }
 .block__name {
   color: rgb(32, 32, 39);
@@ -313,6 +314,9 @@ a {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
   transition: 0.9s;
+}
+.block__picture-mobile {
+  display: none;
 }
 
 .footer {
@@ -514,5 +518,61 @@ a {
   }
   .games-info {
     display: none;
+  }
+  .mini-games {
+    padding-bottom: 48px;
+  }
+  .mini-games__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+  }
+  .mini-games__play {
+    gap: 24px;
+    padding-top: 48px;
+  }
+  .mini-games__star {
+    display: none;
+  }
+  .play__block {
+    flex-direction: column;
+  }
+  .block__text {
+    width: 343px;
+    padding: 29px 29px 32px 29px;
+  }
+  .block__name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .block__info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 245px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .block__info_4 {
+    max-width: 275px;
+  }
+  .block__button {
+    width: 285px;
+    font-size: 16px;
+  }
+  .block__picture {
+    display: none;
+  }
+  .block__picture-mobile {
+    display: block;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=stile.css.map */

@@ -320,6 +320,7 @@ a {
         flex-direction: column;
         padding: 48px;
         width: 600px;
+        box-sizing: border-box;
     }
 
     &__name {
@@ -367,6 +368,10 @@ a {
             background: rgb(255, 255, 255);
             transition: 0.9s;
         }
+    }
+
+    &__picture-mobile {
+        display: none;
     }
 }
 
