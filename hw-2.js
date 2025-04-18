@@ -33,40 +33,24 @@ alert(+a + +b);
 let monthNumber = prompt('Введите номер месяца');
 switch (monthNumber) {
     case '1':
-        console.log('Зимний месяц ЯНВАРЬ');
-        break;
     case '2':
-        console.log('Зимний месяц ФЕВРАЛЬ');
+    case '12':
+        console.log('Зимний месяц');
         break;
     case '3':
-        console.log('Весенний месяц МАРТ');
-        break;
     case '4':
-        console.log('Весенний месяц АПРЕЛЬ');
-        break;
     case '5':
-        console.log('Весенний месяц МАЙ');
+        console.log('Весенний месяц');
         break;
     case '6':
-        console.log('Летний месяц ИЮНЬ');
-        break;
     case '7':
-        console.log('Летний месяц ИЮЛЬ');
-        break;
     case '8':
-        console.log('Летний месяц АВГУСТ');
+        console.log('Летний месяц');
         break;
     case '9':
-        console.log('Осенний месяц СЕНТЯБРЬ');
-        break;
     case '10':
-        console.log('Осенний месяц ОКТЯБРЬ');
-        break;
     case '11':
-        console.log('Осенний месяц НОЯБРЬ');
-        break;
-    case '12':
-        console.log('Зимний месяц ДЕКАБРЬ');
+        console.log('Осенний месяц');
         break;
     default:
         console.log('Ввели что-то не то');
