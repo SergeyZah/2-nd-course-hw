@@ -88,8 +88,6 @@
         }
     }
 
-
-
     .elements__transfer {
         grid-column: span 6;
         height: auto;
@@ -120,6 +118,48 @@
         }
     }
 
+    .block {
+
+
+
+        &__picture {
+            width: 400px;
+            height: 333px;
+        }
+
+        &__text {
+            padding: 30px;
+        }
+
+        &__name {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+
+        &__info {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            padding-top: 20px;
+            padding-bottom: 32px;
+        }
+
+        &__button {
+            font-size: 16px;
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                background: rgb(0, 0, 0);
+                transition: none;
+            }
+        }
+    }
+
+    .footer {
+        height: 125px;
+    }
+
 }
 
 @media (max-width: 828px) {
@@ -127,6 +167,20 @@
     .center {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    .top {
+
+        &__image {
+
+            &_1 {
+                bottom: 125px;
+            }
+
+            &_4 {
+                bottom: 210px;
+            }
+        }
     }
 
     .games-info {
@@ -147,5 +201,24 @@
 
     .game__picture {
         width: 348px;
+    }
+
+    .block__text {
+        padding: 26px 36px;
+    }
+
+    .mini-games__star {
+
+        &_1 {
+            top: 110px;
+        }
+
+        &_2 {
+            top: 87px;
+        }
+
+        &_3 {
+            bottom: 55px;
+        }
     }
 }

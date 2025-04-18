@@ -1,8 +1,8 @@
 @media (max-width: 426px) {
 
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: none;
+        padding-right: none;
     }
 
     .top {
@@ -103,5 +103,105 @@
 
     .games-info {
         display: none;
+    }
+
+    .mini-games {
+        padding-bottom: 48px;
+
+        &__title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+        }
+
+        &__play {
+            gap: 24px;
+            padding-top: 48px;
+            align-items: center;
+        }
+
+        &__star {
+            display: none;
+        }
+    }
+
+    .play__block {
+        flex-direction: column;
+        width: 343px;
+    }
+
+    .block {
+
+        &__text {
+            width: 343px;
+            padding: 29px 29px 32px 29px;
+        }
+
+        &__name {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+
+        &__info {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            max-width: 245px;
+            padding-top: 16px;
+            padding-bottom: 32px;
+
+            &_4 {
+                max-width: 275px;
+            }
+        }
+
+        &__button {
+            width: 285px;
+            font-size: 16px;
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                background: rgb(0, 0, 0);
+                transition: none;
+            }
+        }
+
+        &__picture {
+            display: none;
+        }
+
+        &__picture-mobile {
+            display: block;
+        }
+    }
+
+    .footer {
+        height: 100px;
+
+        &__text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+
+    .play__block {
+        max-width: 288px;
+    }
+
+    .block {
+
+        &__text {
+            max-width: 288px;
+            padding: 25px 25px 29px 25px;
+        }
+
+        &__button {
+            max-width: 238px;
+        }
     }
 }
