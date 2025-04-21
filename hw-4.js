@@ -86,3 +86,30 @@ let result = cube(figure);
 console.log(`${figure} в кубе равняется ${result}`);
 
 
+// Задание 7
+
+const circle1 = {
+    radius: 3,
+    getArea() {
+        return Math.PI * this.radius * this.radius;
+    },
+    getPerimetr() {
+        return 2 * Math.PI * this.radius
+    }
+};
+
+const circle2 = {
+    radius: 4,
+    getArea() {
+        return Math.PI * this.radius * this.radius;
+    },
+    getPerimetr() {
+        return 2 * Math.PI * this.radius
+    }
+};
+
+console.log(`Площадь первого круга: ${circle1.getArea()}`);
+console.log(`Периметр первого круга: ${circle1.getPerimetr()}`);
+
+console.log(`Площадь второго круга: ${circle2.getArea()}`);
+console.log(`Периметр второго круга: ${circle2.getPerimetr()}`);
