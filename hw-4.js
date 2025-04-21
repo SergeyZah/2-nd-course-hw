@@ -68,3 +68,21 @@ function checkNumber(numberOne, numberTwo) {
 console.log(checkNumber(Number(prompt('Введите первое число')), Number(prompt('Введите второе число'))));
 
 
+// Задание 6
+
+const figure = Number(prompt('Введите число'));
+function cube(figure) {
+
+    if (isNaN(figure)) {
+        console.log('Переданный параметр не является числом');
+        return;
+    } else {
+        return figure ** 3;
+    }
+}
+
+let result = cube(figure);
+
+console.log(`${figure} в кубе равняется ${result}`);
+
+
