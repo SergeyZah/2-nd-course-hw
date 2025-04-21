@@ -362,6 +362,7 @@ a {
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        cursor: pointer;
 
         &:hover {
             color: rgb(0, 0, 0);
@@ -394,3 +395,17 @@ a {
 
 @import 'tablet';
 @import 'mobile';
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animated-bar {
+    animation: move 10s linear infinite;
+}
