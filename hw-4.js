@@ -22,4 +22,18 @@ function isEven(number) {
 
 console.log(isEven(3));
 
+// Задание 3
+
+function square(r) {
+    return r ** 2
+}
+
+console.log(square(3));
+
+let newSquare = square(4);
+
+console.log(newSquare);
+
+
+
 
