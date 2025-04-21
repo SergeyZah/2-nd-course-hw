@@ -54,3 +54,17 @@ function questionAge(age) {
 questionAge(prompt('Сколько тебе лет?'));
 
 
+// Задание 5
+
+function checkNumber(numberOne, numberTwo) {
+
+    if (isNaN(numberOne) || isNaN(numberTwo)) {
+        console.log('Одно или оба значения не являются числом');
+    } else {
+        return numberOne * numberTwo;
+    }
+}
+
+console.log(checkNumber(Number(prompt('Введите первое число')), Number(prompt('Введите второе число'))));
+
+
