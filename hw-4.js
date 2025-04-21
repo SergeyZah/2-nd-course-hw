@@ -10,6 +10,7 @@ function min(a, b) {
 
 console.log(min(40, 10));
 
+
 // Задание 2
 
 function isEven(number) {
@@ -21,6 +22,7 @@ function isEven(number) {
 }
 
 console.log(isEven(3));
+
 
 // Задание 3
 
@@ -35,5 +37,20 @@ let newSquare = square(4);
 console.log(newSquare);
 
 
+// Задание 4
+
+function questionAge(age) {
+
+    if (age < 0) {
+        alert('Вы ввели неправильное значение');
+
+    } else if (age >= 0 && age <= 12) {
+        alert('Привет, друг!');
+    } else {
+        alert('Добро пожаловать!');
+    }
+}
+
+questionAge(prompt('Сколько тебе лет?'));
 
 
