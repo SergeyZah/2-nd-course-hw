@@ -482,6 +482,17 @@ a {
     bottom: 55px;
   }
 }
+@media (max-width: 767px) {
+  .games-info {
+    display: none;
+  }
+  .block__picture {
+    display: none;
+  }
+  .block__picture-mobile {
+    display: block;
+  }
+}
 @media (max-width: 426px) {
   .center {
     padding-left: none;
@@ -622,6 +633,8 @@ a {
   }
   .block__picture-mobile {
     display: block;
+    width: 343px;
+    height: 285px;
   }
   .footer {
     height: 100px;

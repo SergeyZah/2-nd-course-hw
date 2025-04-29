@@ -222,3 +222,22 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+
+    .games-info {
+        display: none;
+    }
+
+    .block {
+        &__picture {
+            display: none;
+        }
+
+        &__picture-mobile {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 689px) {}
