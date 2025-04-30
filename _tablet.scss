@@ -223,10 +223,32 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+
+    .top {
+        &__image {
+
+            &_1 {
+                bottom: 90px;
+            }
+
+            &_4 {
+                bottom: 160px;
+            }
+        }
+
+        &__image-mobile_5 {
+            top: -30px;
+            right: -30px;
+        }
+    }
 
     .games-info {
         display: none;
+    }
+
+    .mini-games__title {
+        font-size: 50px;
     }
 
     .block {
@@ -238,6 +260,141 @@
             display: block;
         }
     }
+
+    .stripAnimated {
+        padding: 20px 36px;
+        gap: 36px;
+
+        &__element {
+            font-size: 24px;
+        }
+
+        &__star {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .footer__text {
+        font-size: 20px;
+        line-height: 22px;
+    }
 }
 
-@media (max-width: 689px) {}
+@media (max-width: 690px) {
+
+    .block {
+
+        &__picture-mobile {
+            width: 240px;
+            height: 200px;
+        }
+
+        &__text {
+            padding: 15px 15px;
+        }
+
+        &__info {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__name {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__button {
+            font-size: 14px;
+            line-height: 16px;
+            width: 140px;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .top {
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+            max-width: 300px;
+            font-size: 44px;
+            line-height: 46px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__image {
+
+            &_1 {
+                display: none;
+            }
+
+            &_4 {
+                display: none;
+            }
+        }
+    }
+
+    .stripAnimated {
+
+        &__star {
+            display: none;
+        }
+
+        &__star-mobile {
+            display: block;
+        }
+    }
+
+    .play__block {
+        flex-direction: column;
+        width: 343px;
+    }
+
+    .block {
+
+        &__picture-mobile {
+            display: block;
+            width: 343px;
+            height: 285px;
+        }
+
+        &__info {
+            max-width: 245px;
+        }
+
+        &__button {
+            width: 285px;
+            align-self: center;
+        }
+    }
+
+    .mini-games {
+        padding-bottom: 48px;
+    }
+
+    .mini-games__play {
+        align-items: center;
+    }
+
+    .mini-games__star {
+        display: none;
+    }
+}

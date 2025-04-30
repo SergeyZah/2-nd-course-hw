@@ -312,14 +312,13 @@ a {
 .block {
 
     display: flex;
-    justify-content: space-between;
     border-radius: 30px;
 
     &__text {
         display: flex;
         flex-direction: column;
         padding: 48px;
-        width: 600px;
+        max-width: 600px;
         box-sizing: border-box;
     }
 

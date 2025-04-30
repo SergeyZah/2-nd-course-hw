@@ -263,14 +263,13 @@ a {
 
 .block {
   display: flex;
-  justify-content: space-between;
   border-radius: 30px;
 }
 .block__text {
   display: flex;
   flex-direction: column;
   padding: 48px;
-  width: 600px;
+  max-width: 600px;
   box-sizing: border-box;
 }
 .block__name {
@@ -482,15 +481,124 @@ a {
     bottom: 55px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .top__image_1 {
+    bottom: 90px;
+  }
+  .top__image_4 {
+    bottom: 160px;
+  }
+  .top__image-mobile_5 {
+    top: -30px;
+    right: -30px;
+  }
   .games-info {
     display: none;
+  }
+  .mini-games__title {
+    font-size: 50px;
   }
   .block__picture {
     display: none;
   }
   .block__picture-mobile {
     display: block;
+  }
+  .stripAnimated {
+    padding: 20px 36px;
+    gap: 36px;
+  }
+  .stripAnimated__element {
+    font-size: 24px;
+  }
+  .stripAnimated__star {
+    width: 24px;
+    height: 24px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 690px) {
+  .block__picture-mobile {
+    width: 240px;
+    height: 200px;
+  }
+  .block__text {
+    padding: 15px 15px;
+  }
+  .block__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .block__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .block__button {
+    font-size: 14px;
+    line-height: 16px;
+    width: 140px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 620px) {
+  .top__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__title {
+    text-align: center;
+    max-width: 300px;
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .top__text {
+    text-align: center;
+  }
+  .top__image_1 {
+    display: none;
+  }
+  .top__image_4 {
+    display: none;
+  }
+  .stripAnimated__star {
+    display: none;
+  }
+  .stripAnimated__star-mobile {
+    display: block;
+  }
+  .play__block {
+    flex-direction: column;
+    width: 343px;
+  }
+  .block__picture-mobile {
+    display: block;
+    width: 343px;
+    height: 285px;
+  }
+  .block__info {
+    max-width: 245px;
+  }
+  .block__button {
+    width: 285px;
+    align-self: center;
+  }
+  .mini-games {
+    padding-bottom: 48px;
+  }
+  .mini-games__play {
+    align-items: center;
+  }
+  .mini-games__star {
+    display: none;
   }
 }
 @media (max-width: 426px) {
@@ -535,9 +643,7 @@ a {
   }
   .top__title {
     font-size: 40px;
-    font-weight: 700;
     line-height: 49px;
-    text-align: center;
     max-width: 262px;
     padding-top: 147px;
   }
@@ -545,7 +651,6 @@ a {
     max-width: 296px;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
     padding-bottom: 36px;
   }
   .top__link {
@@ -557,7 +662,6 @@ a {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 16px;
-    font-weight: 600;
     line-height: 141.69%;
     letter-spacing: 0%;
     text-align: center;
@@ -579,9 +683,6 @@ a {
   .games-info {
     display: none;
   }
-  .mini-games {
-    padding-bottom: 48px;
-  }
   .mini-games__title {
     font-size: 40px;
     font-weight: 700;
@@ -590,14 +691,6 @@ a {
   .mini-games__play {
     gap: 24px;
     padding-top: 48px;
-    align-items: center;
-  }
-  .mini-games__star {
-    display: none;
-  }
-  .play__block {
-    flex-direction: column;
-    width: 343px;
   }
   .block__text {
     width: 343px;
@@ -605,14 +698,12 @@ a {
   }
   .block__name {
     font-size: 32px;
-    font-weight: 700;
     line-height: 39px;
   }
   .block__info {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    max-width: 245px;
     padding-top: 16px;
     padding-bottom: 32px;
   }
@@ -620,7 +711,6 @@ a {
     max-width: 275px;
   }
   .block__button {
-    width: 285px;
     font-size: 16px;
   }
   .block__button:hover {
@@ -628,26 +718,18 @@ a {
     background: rgb(0, 0, 0);
     transition: none;
   }
-  .block__picture {
-    display: none;
-  }
-  .block__picture-mobile {
-    display: block;
-    width: 343px;
-    height: 285px;
-  }
-  .footer {
-    height: 100px;
-  }
   .footer__text {
     font-size: 16px;
-    font-weight: 600;
     line-height: 20px;
   }
 }
 @media (max-width: 375px) {
   .play__block {
     max-width: 288px;
+  }
+  .block__picture-mobile {
+    width: 288px;
+    height: 239px;
   }
   .block__text {
     max-width: 288px;
