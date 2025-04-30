@@ -20,7 +20,7 @@
 
 // Задание 3
 
-const numbs = '1, 3, 5, 10, 20';
+const numbs = [1, 3, 5, 10, 20];
 
-let joinNumbs = numbs.split(", ").join(' ');
+let joinNumbs = numbs.join(' ');
 console.log(joinNumbs);
