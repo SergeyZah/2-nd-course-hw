@@ -108,14 +108,18 @@
 
 // Задание 11
 
-function square(arr) {
-    return arr.map(item => item ** 2);
-}
+// function square(arr) {
+//     return arr.map(item => item ** 2);
+// }
 
-console.log(square([5, 8, 2, 12]));
+// console.log(square([5, 8, 2, 12]));
 
 
 
 // Задание 12
 
+function getLength(arr) {
+    return arr.map(item => item.length);
+}
 
+console.log(getLength(['hello', 'Hi', 'Morning']));
