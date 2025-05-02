@@ -64,13 +64,22 @@
 
 // Задание 7
 
-let answer = Number(prompt('Угадайте число'));
+// let answer = Number(prompt('Угадайте число'));
 
-const arr = [9, 8, 7, 6, 5];
-let isArr = arr.includes(answer);
+// const arr = [9, 8, 7, 6, 5];
+// let isArr = arr.includes(answer);
 
-if (isArr === true) {
-    console.log('Угадал');
-} else {
-    console.log('Не угадал');
-}
+// if (isArr === true) {
+//     console.log('Угадал');
+// } else {
+//     console.log('Не угадал');
+// }
+
+
+// Задание 8
+
+const string = 'abcdef';
+console.log(string);
+
+let splitString = string.split('').reverse().join('');
+console.log(splitString);
