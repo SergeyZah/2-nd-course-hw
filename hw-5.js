@@ -135,23 +135,39 @@
 
 // Задание 14
 
+// function randomNumber() {
+//     return Math.floor(Math.random() * 10);
+// }
+
+// const arr = [];
+// const evenArr = [];
+
+// for (let i = 0; i < 10; i++) {
+//     arr.push(randomNumber());
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+
+//     if (arr[i] % 2 === 0) {
+//         evenArr.push(arr[i]);
+//     }
+// }
+
+// console.log(arr);
+// console.log(evenArr);
+
+
+// Задание 15
+
 function randomNumber() {
     return Math.floor(Math.random() * 10);
 }
 
 const arr = [];
-const evenArr = [];
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 6; i++) {
     arr.push(randomNumber());
 }
 
-for (let i = 0; i < arr.length; i++) {
-
-    if (arr[i] % 2 === 0) {
-        evenArr.push(arr[i]);
-    }
-}
-
 console.log(arr);
-console.log(evenArr);
+console.log(arr.reduce((a, b) => a + b) / arr.length);
