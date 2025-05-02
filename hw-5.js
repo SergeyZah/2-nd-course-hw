@@ -78,8 +78,20 @@
 
 // Задание 8
 
-const string = 'abcdef';
-console.log(string);
+// const string = 'abcdef';
+// console.log(string);
 
-let splitString = string.split('').reverse().join('');
-console.log(splitString);
+// let splitString = string.split('').reverse().join('');
+// console.log(splitString);
+
+
+// Задание 9
+
+const arr1 = [[1, 2, 3], [4, 5, 6]];
+const arr2 = [];
+
+for (let i = 0; i < arr1.length; i++) {
+    arr2.push(...arr1[i]);
+}
+
+console.log(arr2);
