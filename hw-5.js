@@ -115,11 +115,19 @@
 // console.log(square([5, 8, 2, 12]));
 
 
-
 // Задание 12
 
-function getLength(arr) {
-    return arr.map(item => item.length);
+// function getLength(arr) {
+//     return arr.map(item => item.length);
+// }
+
+// console.log(getLength(['hello', 'Hi', 'Morning']));
+
+
+// Задание 13
+
+function negativeNumbers(arr) {
+    return arr.filter(item => item < 0);
 }
 
-console.log(getLength(['hello', 'Hi', 'Morning']));
+console.log(negativeNumbers([-8, 9, 4, -2, 5, 2, 7, -11, 15]));
