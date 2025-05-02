@@ -108,8 +108,14 @@
 
 // Задание 11
 
-const arr = [4, 8, 2, 9, 11];
-console.log(arr);
+function square(arr) {
+    return arr.map(item => item ** 2);
+}
 
-const squareArr = arr.map(arr => arr ** 2);
-console.log(squareArr);
+console.log(square([5, 8, 2, 12]));
+
+
+
+// Задание 12
+
+
