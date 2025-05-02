@@ -52,13 +52,25 @@
 
 // Задание 6
 
-const arr = [9, 8, 7, 'a', 6, 5];
-console.log(arr);
+// const arr = [9, 8, 7, 'a', 6, 5];
+// console.log(arr);
 
-arr.sort();
-console.log(arr);
+// arr.sort();
+// console.log(arr);
 
-arr.pop();
-console.log(arr);
+// arr.pop();
+// console.log(arr);
 
 
+// Задание 7
+
+let answer = Number(prompt('Угадайте число'));
+
+const arr = [9, 8, 7, 6, 5];
+let isArr = arr.includes(answer);
+
+if (isArr === true) {
+    console.log('Угадал');
+} else {
+    console.log('Не угадал');
+}
