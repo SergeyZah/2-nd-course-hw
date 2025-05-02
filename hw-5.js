@@ -159,15 +159,15 @@
 
 // Задание 15
 
-function randomNumber() {
-    return Math.floor(Math.random() * 10);
-}
+// function randomNumber() {
+//     return Math.floor(Math.random() * 10);
+// }
 
-const arr = [];
+// const arr = [];
 
-for (let i = 0; i < 6; i++) {
-    arr.push(randomNumber());
-}
+// for (let i = 0; i < 6; i++) {
+//     arr.push(randomNumber());
+// }
 
-console.log(arr);
-console.log(arr.reduce((a, b) => a + b) / arr.length);
+// console.log(arr);
+// console.log(arr.reduce((a, b) => a + b) / arr.length);
