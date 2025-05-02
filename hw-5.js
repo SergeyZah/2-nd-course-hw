@@ -20,7 +20,22 @@
 
 // Задание 3
 
-const numbs = [1, 3, 5, 10, 20];
+// const numbs = [1, 3, 5, 10, 20];
 
-let joinNumbs = numbs.join(' ');
-console.log(joinNumbs);
+// let joinNumbs = numbs.join(' ');
+// console.log(joinNumbs);
+
+
+// Задание 4
+
+const arr = [];
+
+for (let i = 0; i < 3; i++) {
+    const arr2 = [];
+    for (let i = 0; i < 3; i++) {
+        arr2.push(1);
+    }
+    arr.push(arr2);
+}
+
+console.log(arr);
