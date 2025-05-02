@@ -126,8 +126,32 @@
 
 // Задание 13
 
-function negativeNumbers(arr) {
-    return arr.filter(item => item < 0);
+// function negativeNumbers(arr) {
+//     return arr.filter(item => item < 0);
+// }
+
+// console.log(negativeNumbers([-8, 9, 4, -2, 5, 2, 7, -11, 15]));
+
+
+// Задание 14
+
+function randomNumber() {
+    return Math.floor(Math.random() * 10);
 }
 
-console.log(negativeNumbers([-8, 9, 4, -2, 5, 2, 7, -11, 15]));
+const arr = [];
+const evenArr = [];
+
+for (let i = 0; i < 10; i++) {
+    arr.push(randomNumber());
+}
+
+for (let i = 0; i < arr.length; i++) {
+
+    if (arr[i] % 2 === 0) {
+        evenArr.push(arr[i]);
+    }
+}
+
+console.log(arr);
+console.log(evenArr);
