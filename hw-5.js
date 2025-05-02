@@ -87,11 +87,20 @@
 
 // Задание 9
 
-const arr1 = [[1, 2, 3], [4, 5, 6]];
-const arr2 = [];
+// const arr1 = [[1, 2, 3], [4, 5, 6]];
+// const arr2 = [];
 
-for (let i = 0; i < arr1.length; i++) {
-    arr2.push(...arr1[i]);
+// for (let i = 0; i < arr1.length; i++) {
+//     arr2.push(...arr1[i]);
+// }
+
+// console.log(arr2);
+
+
+// Задание 10
+
+const arr = [1, 5, 8, 3, 2, 7, 9, 6, 4, 10];
+
+for (let i = 0; i < arr.length - 1; i++) {
+    console.log(arr[i] + arr[i + 1]);
 }
-
-console.log(arr2);
