@@ -43,10 +43,22 @@
 
 // Задание 5
 
-const arr = [1, 1, 1];
+// const arr = [1, 1, 1];
 
-arr.push(2, 2, 2);
+// arr.push(2, 2, 2);
 
+// console.log(arr);
+
+
+// Задание 6
+
+const arr = [9, 8, 7, 'a', 6, 5];
+console.log(arr);
+
+arr.sort();
+console.log(arr);
+
+arr.pop();
 console.log(arr);
 
 
