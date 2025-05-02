@@ -99,8 +99,17 @@
 
 // Задание 10
 
-const arr = [1, 5, 8, 3, 2, 7, 9, 6, 4, 10];
+// const arr = [1, 5, 8, 3, 2, 7, 9, 6, 4, 10];
 
-for (let i = 0; i < arr.length - 1; i++) {
-    console.log(arr[i] + arr[i + 1]);
-}
+// for (let i = 0; i < arr.length - 1; i++) {
+//     console.log(arr[i] + arr[i + 1]);
+// }
+
+
+// Задание 11
+
+const arr = [4, 8, 2, 9, 11];
+console.log(arr);
+
+const squareArr = arr.map(arr => arr ** 2);
+console.log(squareArr);
