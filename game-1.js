@@ -6,12 +6,13 @@ document.getElementById('playGame1').addEventListener('click', function () {
 
         const userNumber = Number(prompt('Попробуй угадать число от 1 до 100'));
 
-        if (userNumber < 0 || userNumber === 0 || userNumber > 100) {
-            alert('От 1 до 100, соберись!');
+        if (userNumber === 0) {
             break;
+        } else if (userNumber < 1 || userNumber > 100) {
+            alert('От 1 до 100, соберись!');
         } else if (userNumber === predictedNumber) {
             alert(`Супер! Молодец! Загаданное число: ${predictedNumber}.`);
-            break
+            break;
         } else if (userNumber < predictedNumber) {
             alert('Загаданное число больше, думай дальше)');
         } else if (userNumber > predictedNumber) {
