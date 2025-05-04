@@ -85,9 +85,9 @@ randomNumberFromRange(20, 10);
 
 // Задание 8
 
-let nowDate = new Date();
+let nowDate8 = new Date();
 
-console.log(nowDate.toLocaleDateString('ru-Ru'));
+console.log(nowDate8.toLocaleDateString('ru-Ru'));
 
 
 // Задание 9
@@ -100,3 +100,17 @@ const options = { year: 'numeric', month: 'long', day: 'numeric' };
 console.log(`Дата через 73 дня: ${currentDate.toLocaleDateString('ru-RU', options)}`);
 
 
+// Задание 10
+
+function determineDate(nowDate) {
+
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const dayWeek = { weekday: 'long' };
+
+    console.log(`${nowDate.toLocaleDateString('ru-RU', options)} - это ${nowDate.toLocaleDateString('ru-RU', dayWeek)}.`);
+    console.log(`Время: ${nowDate.toLocaleTimeString('ru-RU')}`);
+}
+
+const nowDate10 = new Date();
+
+determineDate(nowDate10);
