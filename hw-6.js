@@ -24,3 +24,13 @@ console.log(a);
 searchString(a, b);
 
 
+// Задание 3
+
+const number = 32.58884;
+
+console.log(`Дано число: ${number}`);
+console.log(`Округление до меньшего числа: ${Math.floor(number)}`);
+console.log(`Округление до большего числа: ${Math.ceil(number)}`);
+console.log(`Округление до ближайшего целого числа: ${Math.round(number)}`);
+
+
