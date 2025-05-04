@@ -34,3 +34,12 @@ console.log(`Округление до большего числа: ${Math.ceil(
 console.log(`Округление до ближайшего целого числа: ${Math.round(number)}`);
 
 
+// Задание 4
+
+const arr = [52, 53, 49, 77, 21, 32];
+
+console.log(arr);
+console.log(`Минимальное число: ${Math.min(...arr)}`);
+console.log(`Максимальное число: ${Math.max(...arr)}`);
+
+
