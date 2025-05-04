@@ -315,6 +315,9 @@ a {
   background: rgb(255, 255, 255);
   transition: 0.9s;
 }
+.block__picture_right {
+  margin-left: auto;
+}
 .block__picture-mobile {
   display: none;
 }
