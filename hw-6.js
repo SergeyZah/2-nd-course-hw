@@ -90,3 +90,13 @@ let nowDate = new Date();
 console.log(nowDate.toLocaleDateString('ru-Ru'));
 
 
+// Задание 9
+
+const currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+console.log(`Дата через 73 дня: ${currentDate.toLocaleDateString('ru-RU', options)}`);
+
+
