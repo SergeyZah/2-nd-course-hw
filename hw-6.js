@@ -69,3 +69,17 @@ function arrayRandom(numb) {
 arrayRandom(20);
 
 
+// Задание 7
+
+function randomNumberFromRange(numb1, numb2) {
+
+    if (numb1 > numb2) {
+        console.log(Math.floor(Math.random() * (numb1 - numb2)) + numb2)
+    } else {
+        console.log(Math.floor(Math.random() * (numb2 - numb1)) + numb1)
+    }
+}
+
+randomNumberFromRange(20, 10);
+
+
