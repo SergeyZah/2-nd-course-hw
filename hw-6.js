@@ -43,3 +43,14 @@ console.log(`Минимальное число: ${Math.min(...arr)}`);
 console.log(`Максимальное число: ${Math.max(...arr)}`);
 
 
+// Задание 5
+
+function randomNumber() {
+
+    let number = Math.floor(Math.random() * 10) + 1;
+    console.log(number);
+}
+
+randomNumber();
+
+
