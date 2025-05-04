@@ -83,3 +83,10 @@ function randomNumberFromRange(numb1, numb2) {
 randomNumberFromRange(20, 10);
 
 
+// Задание 8
+
+let nowDate = new Date();
+
+console.log(nowDate.toLocaleDateString('ru-Ru'));
+
+
