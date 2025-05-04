@@ -54,3 +54,18 @@ function randomNumber() {
 randomNumber();
 
 
+// Задание 6
+
+function arrayRandom(numb) {
+
+    const arr = [];
+
+    for (let i = 0; i < numb / 2; i++) {
+        arr.push(Math.floor(Math.random() * numb) + 1)
+    }
+    console.log(arr);
+}
+
+arrayRandom(20);
+
+
