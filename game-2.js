@@ -1,4 +1,5 @@
 document.getElementById('playGame2').addEventListener('click', function () {
+
     const operators = ['+', '-', '*', '/'];
     const funcOper = operators[Math.floor((Math.random() * operators.length))];
     let numb1 = Math.floor(Math.random() * 10) + 1;
