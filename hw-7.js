@@ -73,12 +73,37 @@
 
 // Задание 4
 
-function delayForSecond(callback) {
+// function delayForSecond(callback) {
+//     setTimeout(() => {
+//         callback();
+//     }, 1000);
+// }
+
+// delayForSecond(function () {
+//     console.log('Привет, Глеб!');
+// })
+
+
+// Задание 5
+
+// Функция delayForSecond через 1 секунду пишет в консоль 
+// «Прошла одна секунда», а затем вызывает переданный колбэк
+function delayForSecond(cb) {
     setTimeout(() => {
-        callback();
-    }, 1000);
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); }
+    }, 1000)
 }
 
-delayForSecond(function () {
-    console.log('Привет, Глеб!');
-})
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond();
+setTimeout(() => {
+    sayHi('Глеб')
+}, 2000);
