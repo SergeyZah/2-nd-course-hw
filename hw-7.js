@@ -55,19 +55,30 @@
 
 // Задание 3
 
-const timer = (deadline) => {
-    const date = new Date();
-    console.log(date.toLocaleDateString('ru-RU'));
-    const interval = setInterval(() => {
-        console.log(date.toLocaleDateString('ru-RU'));
-    }, 3000);
+// const timer = (deadline) => {
+//     const date = new Date();
+//     console.log(date.toLocaleDateString('ru-RU'));
+//     const interval = setInterval(() => {
+//         console.log(date.toLocaleDateString('ru-RU'));
+//     }, 3000);
 
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         console.log(`${deadline} секунд прошло`)
+//     }, deadline * 1000)
+// };
+
+// timer(30);
+
+
+// Задание 4
+
+function delayForSecond(callback) {
     setTimeout(() => {
-        clearInterval(interval);
-        console.log(`${deadline} секунд прошло`)
-    }, deadline * 1000)
-};
+        callback();
+    }, 1000);
+}
 
-timer(30);
-
-
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+})
