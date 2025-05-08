@@ -295,6 +295,7 @@ a {
   max-width: 490px;
 }
 .block__button {
+  font-family: "Montserrat";
   display: block;
   border-radius: 60px;
   background: rgb(32, 32, 39);
