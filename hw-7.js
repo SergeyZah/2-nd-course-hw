@@ -107,3 +107,4 @@ delayForSecond();
 setTimeout(() => {
     sayHi('Глеб')
 }, 2000);
+
