@@ -17,10 +17,10 @@ const btnColorEl = document.querySelector('.btn-Color');
 const textColorEl = document.querySelector('.text-Color');
 
 btnColorEl.addEventListener('click', () => {
-    if (textColorEl.style.color === 'black') {
-        textColorEl.style.color = 'red';
-    } else {
+    if (textColorEl.style.color === 'red') {
         textColorEl.style.color = 'black';
+    } else {
+        textColorEl.style.color = 'red';
     }
 });
 
@@ -47,7 +47,6 @@ allDescription.forEach(description => {
 // Задание 5
 
 const allDescription5 = document.querySelectorAll('.description5');
-const allRandomText = document.querySelectorAll('.random-Text');
 
 allDescription5.forEach(description => {
     description.textContent = 'Новый текст';
@@ -70,9 +69,10 @@ btnNewTextEl.addEventListener('click', () => {
 // Задание 7
 
 const btnDeletTextEl = document.querySelector('.btn-Delet-Text');
-const otherTextEl = document.querySelector('.other-Text');
 
 btnDeletTextEl.addEventListener('click', () => {
     const descriptionEl = document.querySelector('.Description');
-    descriptionEl.remove();
+    if (descriptionEl) {
+        descriptionEl.remove();
+    }
 });
