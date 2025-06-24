@@ -9,10 +9,12 @@
 
 - Получите положительные эмоции. Добрый клиент - хороший клиент;
 
-- Игры могут менться, в зависимости от желания.
+- Игры могут менться, в зависимости от желания;
+
+- Сайт адаптирован под разные устройства.
 
 <h3>
-  Website appearance: https://sergeyzah.github.io/FurnitureStore/
+  Website appearance: https://sergeyzah.github.io/Mini-games/
 </h3>
 
 ### :hammer_and_wrench: Languages and tools :
